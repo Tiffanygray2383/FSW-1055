@@ -1,18 +1,13 @@
-console.log ("I am running javascript with node"
-)
-var marketlist = {
-   dairy: ["eggs", "milk"],// array
-   meat: "chicken beef seafood",
-   beverages: "juice soda wine water", 
-number: 9,
- dairy2: function () {
-    return this.eggs + " " + this.milk;
-  },
 
-
-    boolean: true    
-
-
-
+var shopper = {
+   firstName: "Tiffany",
+   lastName: "Gray",
+   age: 50,
+   hasCreditCard: true,
+   groceryCart: ["eggs", "milk", "seafood"],// array
+   shopperInformation:  function(){
+      return this.firstName + " " + this.lastName + " is " + this.age + " years old, and is trying to purchase " + this.groceryCart[2];
+   }
 }
-
+   
+console.log(shopper.shopperInformation());
